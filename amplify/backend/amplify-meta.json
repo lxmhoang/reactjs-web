@@ -1,0 +1,66 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify6e9086e6c8794-staging-171638-authRole",
+      "UnauthRoleArn": "arn:aws:iam::891377276789:role/amplify-amplify6e9086e6c8794-staging-171638-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::891377276789:role/amplify-amplify6e9086e6c8794-staging-171638-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-amplify6e9086e6c8794-staging-171638-deployment",
+      "UnauthRoleName": "amplify-amplify6e9086e6c8794-staging-171638-unauthRole",
+      "StackName": "amplify-amplify6e9086e6c8794-staging-171638",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:891377276789:stack/amplify-amplify6e9086e6c8794-staging-171638/cc05e110-d981-11ee-bff5-021b5755bfbb",
+      "AmplifyAppId": "d2ewecj32arwl9"
+    }
+  },
+  "auth": {
+    "reactjsf319": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "signupAttributes": [],
+        "socialProviders": [
+          "FACEBOOK",
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "CreatedSNSRole": "arn:aws:iam::891377276789:role/sns67b2cadd171638-staging",
+        "UserPoolId": "ap-southeast-2_pjSVEhC2p",
+        "AppClientIDWeb": "3k635q27kmlck3pegloblnh9ff",
+        "AppClientID": "6qrvrpqfgrru22lpbsd1h341e1",
+        "HostedUIDomain": "4yln34z8kt01-staging",
+        "IdentityPoolId": "ap-southeast-2:2533ff36-d856-47d9-9465-16d2a9733116",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-southeast-2:891377276789:userpool/ap-southeast-2_pjSVEhC2p",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://main.d2ewecj32arwl9.amplifyapp.com/\"],\"LogoutURLs\":[\"https://main.d2ewecj32arwl9.amplifyapp.com/\"]}",
+        "UserPoolName": "reactjsf319"
+      },
+      "lastPushTimeStamp": "2024-03-04T12:59:31.643Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify6e9086e6c8794-staging-171638-deployment/amplify-cfn-templates/auth/reactjsf319-cloudformation-template.json",
+        "logicalId": "authreactjsf319"
+      }
+    }
+  }
+}
