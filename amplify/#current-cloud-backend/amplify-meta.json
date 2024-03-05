@@ -14,19 +14,13 @@
   },
   "auth": {
     "reactjsf319": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
       "customAuth": false,
+      "dependsOn": [],
       "frontendAuthConfig": {
-        "socialProviders": [
-          "FACEBOOK",
-          "GOOGLE"
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
         ],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
-        "signupAttributes": [],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,
           "passwordPolicyCharacters": [
@@ -36,19 +30,20 @@
             "REQUIRES_UPPERCASE"
           ]
         },
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
+        "signupAttributes": [],
+        "socialProviders": [
+          "FACEBOOK",
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
         ],
         "verificationMechanisms": [
           "EMAIL"
         ]
       },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify6e9086e6c8794-staging-171638-deployment/amplify-cfn-templates/auth/reactjsf319-cloudformation-template.json",
-        "logicalId": "authreactjsf319"
-      },
-      "lastPushTimeStamp": "2024-03-04T07:27:01.603Z",
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
       "output": {
         "CreatedSNSRole": "arn:aws:iam::891377276789:role/sns67b2cadd171638-staging",
         "UserPoolId": "ap-southeast-2_pjSVEhC2p",
@@ -61,7 +56,38 @@
         "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://main.d2ewecj32arwl9.amplifyapp.com/\"],\"LogoutURLs\":[\"https://main.d2ewecj32arwl9.amplifyapp.com/\"]}",
         "UserPoolName": "reactjsf319"
       },
-      "lastPushDirHash": "ZPmT5n7cacKyDUIhxElfH3zV+mc="
+      "lastPushTimeStamp": "2024-03-05T08:19:29.377Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify6e9086e6c8794-staging-171638-deployment/amplify-cfn-templates/auth/reactjsf319-cloudformation-template.json",
+        "logicalId": "authreactjsf319"
+      }
+    }
+  },
+  "api": {
+    "reactjsf319": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "c7jxlddseve4fjloyksrnkrsjy",
+        "GraphQLAPIEndpointOutput": "https://icxwrudhijhsvewd3vmlrlshca.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-ju2hqis6sve2re2bzda4k75vrm"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify6e9086e6c8794-staging-171638-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apireactjsf319"
+      },
+      "lastPushTimeStamp": "2024-03-05T08:19:41.174Z",
+      "lastPushDirHash": "W3sxsqymucPym9Yy2T7NGz7+q0s="
     }
   }
 }

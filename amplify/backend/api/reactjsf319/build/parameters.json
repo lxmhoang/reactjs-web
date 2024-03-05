@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "reactjsf319",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-amplify6e9086e6c8794-staging-171638-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/c193269c48ba0cec123fa58eb9d56990ce7d2e00"
+}
